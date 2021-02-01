@@ -1,0 +1,53 @@
+// chris grimes
+// cs 23001
+// test.cpp String swap function
+
+#include<iostream>
+#include<cassert>
+#include"string.hpp"
+
+int main(){
+  {
+    // Setup
+    char a[]="abc";
+    char b[]="def";
+    String first(a);
+    String second(b);
+
+    // Test
+    std::cout<<first<<second<<std::endl;
+    a.swap(b);
+    assert(first==b);
+    assert(second==a);
+    std::cout<<second<<first<<std::endl;
+  }
+  {
+    // Setup
+    char a[]="Help!!";
+    char b[]="Here you go";
+    String first(a);
+    String second(b);
+
+    // Test
+    std::cout<<first<<second<<std::endl;
+    a.swap(b);
+    assert(first==b);
+    assert(second==a);
+    std::cout<<second<<first<<std::endl;
+  }
+  {
+    // Setup
+    char a[]="Happiness is a warm gun";
+    char b[]="Bang bang shoot shoot";
+    String first(a);
+    String second(b);
+
+    // Test
+    std::cout<<first<<second<<std::endl;
+    a.swap(b);
+    assert(first==b);
+    assert(second==a);
+    std::cout<<second<<first<<std::endl;
+  }
+  std::cout<<" finished testing swap function"<<std::endl;
+}

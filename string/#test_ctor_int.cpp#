@@ -1,0 +1,27 @@
+n(){
+  {
+    // Test
+    String test(1);
+
+    //Verfiy
+    std::cout<<test.capacity()<<"=="<<1<<std::endl;
+    assert(test.capacity()==1);
+  }
+ {
+    // Test
+    String test(10);
+
+    //Verfiy
+    std::cout<<test.capacity()<<"=="<<10<<std::endl;
+    assert(test.capacity()==10);
+  }
+ {
+    // Test
+    String test(100);
+
+    //Verfiy
+    std::cout<<test.capacity()<<"=="<<10<<std::endl;
+    assert(test.capacity()==100);
+  }
+ std::cout<<"constructor(int) tests passed"<<std::endl;
+}
